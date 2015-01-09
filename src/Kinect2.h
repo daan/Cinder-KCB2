@@ -521,6 +521,7 @@ public:
 	ci::Vec2i											mapCameraToDepth( const ci::Vec3f& v ) const;
 	std::vector<ci::Vec2i>								mapCameraToDepth( const std::vector<ci::Vec3f>& v ) const;
 	ci::Vec3f											mapDepthToCamera( const ci::Vec2i& v, const ci::Channel16u& depth ) const;
+	ci::Vec3f											mapDepthToCameraFake(const Vec2i& v, const Channel16u& depth, uint16_t d = 1000) const;
 	std::vector<ci::Vec3f>								mapDepthToCamera( const std::vector<ci::Vec2i>& v, const ci::Channel16u& depth ) const;
 	std::vector<ci::Vec3f>								mapDepthToCamera( const ci::Channel16u& depth ) const;
 	ci::Surface32f										mapDepthToCameraTable() const;
